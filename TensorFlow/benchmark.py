@@ -26,7 +26,7 @@ class Profiler:
     
 
 class Topformer_base_512(Profiler):
-    MODEL_PATH = './TensorFlow/Models/topformer/topformer_base_512x512'
+    MODEL_PATH = './TensorFlow/models/topformer/topformer_base_512x512'
     INPUT_SHAPE = [1, 512, 512, 3]
     def __init__(self):
         self.model = tf.saved_model.load(self.MODEL_PATH)
@@ -38,7 +38,7 @@ class Topformer_base_512(Profiler):
     
 
 class Topformer_small_512(Profiler):
-    MODEL_PATH = './TensorFlow/Models/topformer/topformer_small_512x512'
+    MODEL_PATH = './TensorFlow/models/topformer/topformer_small_512x512'
     INPUT_SHAPE = [1, 512, 512, 3]
     def __init__(self):
         self.model = tf.saved_model.load(self.MODEL_PATH)
@@ -50,7 +50,7 @@ class Topformer_small_512(Profiler):
 
 
 class Topformer_tiny_512(Profiler):
-    MODEL_PATH = './TensorFlow/Models/topformer/topformer_tiny_512x512'
+    MODEL_PATH = './TensorFlow/models/topformer/topformer_tiny_512x512'
     INPUT_SHAPE = [1, 512, 512, 3]
     def __init__(self):
         self.model = tf.saved_model.load(self.MODEL_PATH)
@@ -62,7 +62,7 @@ class Topformer_tiny_512(Profiler):
 
 
 class Topformer_tiny_448(Profiler):
-    MODEL_PATH = './TensorFlow/Models/topformer/topformer_tiny_448x448'
+    MODEL_PATH = './TensorFlow/models/topformer/topformer_tiny_448x448'
     INPUT_SHAPE = [1, 448, 448, 3]
     def __init__(self):
         self.model = tf.saved_model.load(self.MODEL_PATH)
